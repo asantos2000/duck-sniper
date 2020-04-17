@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="iEX#RZIYvmkv8YxgFm$,">Player</variable><variable type="KIND_SpriteKind" id="Vl[^pltTVfw01[Sz#b8T">Projectile</variable><variable type="KIND_SpriteKind" id="huER!,%;|/E:nbJ|)YSy">Food</variable><variable type="KIND_SpriteKind" id="4a$SSSgDU1kxJK!B$v37">Enemy</variable><variable id="+8f;}_ToeTwWN)YJIl[z">mySprite</variable><variable id="_Sfd(25QOrCm=zvYv{Y}">mySprite2</variable><variable id="aUZpMwuxHpin55i[.112">projectile</variable></variables><block type="keyonevent" x="550" y="0"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Released</field><statement name="HANDLER"><block type="controls_repeat_ext"><value name="TIMES"><shadow type="math_whole_number"><field name="NUM">4</field></shadow></value><statement name="DO"><block type="startEffectOnSprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="effect">effects.trail</field><value name="sprite"><block type="variables_get"><field name="VAR" id="+8f;}_ToeTwWN)YJIl[z">mySprite</field></block></value></block></statement></block></statement></block><block type="pxt-on-start" x="0" y="50"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="+8f;}_ToeTwWN)YJIl[z">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . b 5 b . . . 
+. . . . . . . . . b 5 b . . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. . . . b b 5 d 1 f 5 5 d f . . 
+. . . . b 5 5 1 f f 5 d 4 c . . 
+. . . . b 5 5 d f b d d 4 4 . . 
+. b b b d 5 5 5 5 5 4 4 4 4 4 b 
+b d d d b b d 5 5 4 4 4 4 4 b . 
+b b d 5 5 5 b 5 5 5 5 5 5 b . . 
+c d c 5 5 5 5 d 5 5 5 5 5 5 b . 
+c b d c d 5 5 b 5 5 5 5 5 5 b . 
+. c d d c c b d 5 5 5 5 5 d b . 
+. . c b d d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value></block></statement></block><block type="gameupdate" x="0" y="310"><statement name="HANDLER"><block type="controls_if"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get"><field name="property">Sprite.x</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="+8f;}_ToeTwWN)YJIl[z">mySprite</field></block></value></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="scenescreenwidth"/></value></block></value><statement name="DO0"><block type="Sprite_blockCombine_change"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="+8f;}_ToeTwWN)YJIl[z">mySprite</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block></statement><statement name="ELSE"><block type="Sprite_blockCombine_set"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="+8f;}_ToeTwWN)YJIl[z">mySprite</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">0</field></shadow></value></block></statement></block></statement></block></xml>
